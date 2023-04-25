@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 LABEL maintainer="heinloth@cs.fau.de"
 
@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
 
 LABEL org.label-schema.schema-version="1.0"
-LABEL org.label-schema.name="lp-build/debian-buster"
+LABEL org.label-schema.name="lp-build/debian-bullseye"
 LABEL org.label-schema.vendor="Friedrich-Alexander-Universität Erlangen-Nürnberg / Lehrstuhl für Informatik 4"
 
 RUN  ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime \
