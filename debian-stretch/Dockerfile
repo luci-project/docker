@@ -13,3 +13,6 @@ RUN  ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime \
  && sed -i -e '/stretch-updates/d' -e 's/\(security\|deb\).debian.org/archive.debian.org/' /etc/apt/sources.list \
  && apt-get update \
  && apt-get install -y apt-transport-https ca-certificates build-essential file less nano clang-11 gcc gccgo g++ gfortran gnat golang fpc rustc make libcap2-bin
+ && update-alternatives --install /usr/bin/clang clang /usr/bin/clang-11 110 --slave /usr/bin/clang++ clang++ /usr/bin/clang++-11
+ && update-alternatives --install /usr/bin/cc cc /usr/bin/clang 110 --slave /usr/bin/c++ c++ /usr/bin/clang++
+
