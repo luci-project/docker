@@ -11,4 +11,4 @@ LABEL org.label-schema.vendor="Friedrich-Alexander-Universität Erlangen-Nürnbe
 
 RUN  ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime \
  && apt-get update \
- && apt-get install -y apt-transport-https ca-certificates build-essential file less nano clang gcc gccgo g++ gfortran gnat golang fpc rustc make libcap2-bin
+ && apt-get install -y apt-transport-https ca-certificates build-essential file less nano clang gcc gccgo g++ gfortran gnat golang fpc rustc make libcap2-bin libstdc++-10-dev
