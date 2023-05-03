@@ -1,4 +1,4 @@
-REPO=heinloth/lp-build
+REPO=inf4/luci
 DOCKERFILES=$(sort $(wildcard */Dockerfile))
 TAGS=$(patsubst %/Dockerfile,%,$(DOCKERFILES))
 PUSHTAGS=$(addprefix push-,$(TAGS))
