@@ -10,4 +10,4 @@ LABEL org.label-schema.vendor="Friedrich-Alexander-Universität Erlangen-Nürnbe
 LABEL org.label-schema.url="https://gitlab.cs.fau.de/luci-project"
 LABEL org.label-schema.vcs-url="https://gitlab.cs.fau.de/luci-project/docker"
 
-RUN yum install -y clang diffutils gcc gcc-c++ file less make nano
+RUN yum install -y binutils clang diffutils gcc gcc-c++ file less make nano wget

@@ -14,4 +14,4 @@ LABEL org.label-schema.vcs-url="https://gitlab.cs.fau.de/luci-project/docker"
 
 RUN  ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime \
  && apt-get update \
- && apt-get install -y apt-transport-https ca-certificates build-essential clang file fpc gcc gccgo git g++ gfortran gnat golang less libcap2-bin libstdc++-10-dev make nano rustc
+ && apt-get install -y apt-transport-https binutils build-essential ca-certificates clang file fpc gcc gccgo git g++ gfortran gnat golang less libcap2-bin libstdc++-10-dev make nano rustc wget

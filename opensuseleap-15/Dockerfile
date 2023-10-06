@@ -10,4 +10,4 @@ LABEL org.label-schema.vendor="Friedrich-Alexander-Universität Erlangen-Nürnbe
 LABEL org.label-schema.url="https://gitlab.cs.fau.de/luci-project"
 LABEL org.label-schema.vcs-url="https://gitlab.cs.fau.de/luci-project/docker"
 
-RUN zypper install -y clang gcc gcc-c++ file less libcap-progs make nano
+RUN zypper install -y binutils clang gcc gcc-c++ file less libcap-progs make nano wget

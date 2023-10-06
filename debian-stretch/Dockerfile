@@ -14,6 +14,6 @@ LABEL org.label-schema.vcs-url="https://gitlab.cs.fau.de/luci-project/docker"
 RUN  ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime \
  && sed -i -e '/stretch-updates/d' -e 's/\(security\|deb\).debian.org/archive.debian.org/' /etc/apt/sources.list \
  && apt-get update \
- && apt-get install -y apt-transport-https ca-certificates build-essential clang-11 gcc gccgo git g++ file fpc gfortran gnat golang less libcap2-bin make nano rustc \
+ && apt-get install -y apt-transport-https binutils build-essential ca-certificates clang-11 gcc gccgo git g++ file fpc gfortran gnat golang less libcap2-bin make nano rustc wget \
  && update-alternatives --install /usr/bin/clang clang /usr/bin/clang-11 110 --slave /usr/bin/clang++ clang++ /usr/bin/clang++-11
 
