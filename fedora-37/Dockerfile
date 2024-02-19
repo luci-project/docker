@@ -1,5 +1,6 @@
 FROM fedora:37
 
+ENV LUCI_DOCKER 1
 ENV LC_ALL C.UTF-8
 
 LABEL maintainer="heinloth@cs.fau.de"

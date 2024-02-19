@@ -1,5 +1,6 @@
 FROM debian:bullseye
 
+ENV LUCI_DOCKER 1
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
 
